@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link href="static/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid border border-warning border-width-lg min-vh-100">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white align-items-center px-0">
+          <a class="navbar-brand mr-0" href="index.html">
+            <img class="logo-md" src="static/imgs/eID-logo.png">
+          </a>
+            <ul class="nav nav-tabs w-100 mx-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/eid-web/eid.html">身分證</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/eid-web/issues.html">永續合作</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/eid-web/foot_print.html">數位足跡</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/eid-web/wallet.html">錢包</a>
+              </li>
+            </ul>
+            <a class="navbar-brand mr-0" href="#">
+              <img style="width: 45px"src="static/imgs/user-edit-solid.svg">
+            </a>
+        </nav>
+        <div class="container-fluid">
+          <form>
+            <div class="row mt-3">
+              <div class="col-6 mb-1">
+                <div class="border d-flex align-items-center justify-content-center h-100">
+                  <img src="static/imgs/image_icon.svg" width="100" height="100" alt="">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-row">
+                  <div class="form-group col-12 mb-1">
+                    <label for="inputEvent" class="mb-1" style="font-size: 14px">活動名稱</label>
+                    <input type="text" class="form-control form-control-sm" id="inputEvent" placeholder="">
+                  </div>
+                  <div class="form-group col-12 mb-1">
+                    <label for="inputEvent" class="mb-1" style="font-size: 14px">SDGs</label>
+                    <div class="d-flex">
+                      <a class="d-block" href="#">
+                        <img class="mr-2" src="static/imgs/SDGS/E_WEB_04.png" alt="" style="width:30px">
+                      </a>
+                      <a class="d-block" href="#">
+                        <img class="mr-2" src="static/imgs/SDGS/E_WEB_08.png" alt="" style="width:30px">
+                      </a>
+                      <a class="d-block" href="#">
+                        <img class="mr-2" src="static/imgs/SDGS/E_WEB_11.png" alt="" style="width:30px">
+                      </a>
+                      <a class="d-block" href="#">
+                        <img src="static/imgs/SDGS/E_WEB_15.png" alt="" style="width:30px">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-group col-12 mb-1">
+                    <label for="inputDatePicker1" class="mb-1" style="font-size: 14px">時間</label>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                          <input type="text" class="form-control form-control-sm datetimepicker-input" data-target="#datetimepicker1"/>
+                          <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                              <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                          <input type="text" class="form-control form-control-sm datetimepicker-input" data-target="#datetimepicker1"/>
+                          <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                              <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-12 mb-1">
+                    <label for="textareaIdea" class="mb-1" style="font-size: 14px">關係人口評論</label>
+                    <textarea class="form-control form-control-sm w-100" id="textareaIdea" placeholder=""></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="text-center my-3">
+                  <button type="submit" class="btn btn-primary">提交</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
